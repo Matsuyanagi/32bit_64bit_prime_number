@@ -13,7 +13,7 @@ require 'time'
 require 'strscan'
 
 require 'prime'
-require '.../revised_prime_test/mr_prime.rb'
+require '../revised_prime_test/mr_prime.rb'
 
 Encoding.default_external="utf-8"
 #-----------------------------------------------------------------------------
