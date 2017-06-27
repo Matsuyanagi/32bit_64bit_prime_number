@@ -13,6 +13,7 @@ require 'time'
 require 'strscan'
 
 require 'prime'
+require '.../revised_prime_test/mr_prime.rb'
 
 Encoding.default_external="utf-8"
 #-----------------------------------------------------------------------------
@@ -21,7 +22,6 @@ Encoding.default_external="utf-8"
 settings = {
 	
 }
-
 
 
 #-----------------------------------------------------------------------------
@@ -38,7 +38,8 @@ def main( settings )
 	count = 0
 	n = max_number
 	10000.times do
-		if n.prime?
+#		if n.prime?
+		if n.mr_prime?
 			count += 1
 			puts n
 			STDOUT.flush
